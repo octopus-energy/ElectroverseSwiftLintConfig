@@ -1,2 +1,6 @@
-# Inherit from Kodeco Swift Style Guide - https://github.com/kodecocodes/swift-style-guide
+# inherit from Kodeco Swift Style Guide - https://github.com/kodecocodes/swift-style-guide
 parent_config: https://raw.githubusercontent.com/kodecocodes/swift-style-guide/345b5690a99bb6212fd9bbf17f673a8a0d7a5607/com.raywenderlich.swiftlint.yml
+
+# we disable any particularly pedantic rules which do not support auto-correction
+disabled_rules:
+  - indentation_width
