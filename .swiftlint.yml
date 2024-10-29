@@ -1,2 +1,2 @@
-# https://realm.github.io/SwiftLint/force_cast.html
-force_cast: warning
+# Inherit from Kodeco Swift Style Guide - https://github.com/kodecocodes/swift-style-guide
+parent_config: https://raw.githubusercontent.com/kodecocodes/swift-style-guide/345b5690a99bb6212fd9bbf17f673a8a0d7a5607/com.raywenderlich.swiftlint.yml
