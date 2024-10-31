@@ -3,4 +3,5 @@ parent_config: https://raw.githubusercontent.com/kodecocodes/swift-style-guide/3
 
 # we disable any particularly pedantic rules which do not support auto-correction
 disabled_rules:
+  - attributes
   - indentation_width
