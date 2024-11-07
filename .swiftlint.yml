@@ -5,3 +5,10 @@ parent_config: https://raw.githubusercontent.com/kodecocodes/swift-style-guide/3
 disabled_rules:
   - attributes
   - indentation_width
+
+line_length:
+  warning: 150
+  ignores_interpolated_strings: true
+
+trailing_whitespace:
+  ignores_empty_lines: true
