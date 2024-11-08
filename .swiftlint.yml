@@ -1,10 +1,90 @@
-# inherit from Kodeco Swift Style Guide - https://github.com/kodecocodes/swift-style-guide
-parent_config: https://raw.githubusercontent.com/kodecocodes/swift-style-guide/345b5690a99bb6212fd9bbf17f673a8a0d7a5607/com.raywenderlich.swiftlint.yml
+excluded:
+  - **/*+Generated.swift
+  - **/Ampli.swift
 
-# we disable any particularly pedantic rules which do not support auto-correction
 disabled_rules:
+  - discarded_notification_center_observer
+  - notification_center_detachment
+  - orphaned_doc_comment
+  - todo
+  - unused_capture_list
   - attributes
   - indentation_width
+  - function_parameter_count
+
+analyzer_rules:
+  - unused_import
+
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - colon
+  - convenience_type
+  - discouraged_object_literal
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - enum_case_associated_values_count
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - indentation_width
+  - last_where
+  - legacy_random
+  - literal_expression_end_indentation
+  - multiline_arguments
+  - multiline_function_chains
+  - multiline_literal_brackets
+  - multiline_parameters
+  - multiline_parameters_brackets
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - strict_fileprivate
+  - toggle_bool
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - yoda_condition
+
+attributes:
+  always_on_same_line:
+    - "@IBSegueAction"
+    - "@IBAction"
+    - "@NSManaged"
+    - "@objc"
+
+force_cast: warning
+
+force_try: warning
+
+function_body_length:
+    warning: 60
+
+legacy_hashing: error
+
+identifier_name:
+  max_length:
+    warning: 60
+    error: 80
+  excluded:
+    - i
+    - id
+    - x
+    - y
+    - z
+    - ev
+
+indentation_width:
+  indentation_width: 2
 
 line_length:
   warning: 150
@@ -13,6 +93,19 @@ line_length:
   ignores_comments: true
   ignores_interpolated_strings: true
 
+multiline_arguments:
+  first_argument_location: next_line
+  only_enforce_after_first_closure_on_first_line: true
+
+private_over_fileprivate:
+  validate_extensions: true
+
 trailing_whitespace:
   ignores_empty_lines: true
   ignores_comments: true
+
+vertical_whitespace:
+  max_empty_lines: 2
+
+trailing_closure:
+  only_single_muted_parameter: true
