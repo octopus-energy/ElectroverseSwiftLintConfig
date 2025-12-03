@@ -4,9 +4,8 @@ disabled_rules:
   - orphaned_doc_comment
   - todo
   - unused_capture_list
-  - attributes
-  - indentation_width
   - function_parameter_count
+  - blanket_disable_command
 
 analyzer_rules:
   - unused_import
