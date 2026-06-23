@@ -5,6 +5,7 @@ disabled_rules:
   - todo
   - function_parameter_count
   - blanket_disable_command
+  - pattern_matching_keywords
 
 analyzer_rules:
   - unused_import
