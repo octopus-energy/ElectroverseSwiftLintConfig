@@ -11,6 +11,8 @@ analyzer_rules:
   - unused_import
 
 opt_in_rules:
+  - accessibility_label_for_image
+  - accessibility_trait_for_button
   - array_init
   - attributes
   - closure_end_indentation
